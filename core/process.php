@@ -6,7 +6,7 @@ include('secure/ips.php');
 
 $metodo_permitido = "POST";
 $archivo = "../logs/log.log";
-$dominio_autorizado = "localhost";
+$dominio_autorizado = "192.168.1.4";
 $ip = ip_in_ranges($_SERVER["REMOTE_ADDR"],$rango);
 $txt_usuario_autorizado = "admin";
 $txt_password_autorizado = "admin";
